@@ -5,20 +5,24 @@ using namespace std;
 class Student {
 	string name;
 	int age;
+	double mark;
 public:
 	Student() {
 		name = "Boryslav";
 		age = 222;
+		mark = 11.2;
 	}
 
-	Student(string name, int age) {
+	Student(string name, int age, double mark) {
 		this->name = name;
 		this->age = age;
+		this->mark = mark;
 	}
 
 	Student(const Student& obj) {
 		this->name = obj.name;
 		this->age = obj.age;
+		this->mark = obj.mark;
 	}
 
 	void PrintInfoAboutStudent() {
